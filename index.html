@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootsrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- main-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>   
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="autohide navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="./assets/img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="nav-color" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-color" class="nav-link" href="#skills-page">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-color" class="nav-link" href="#porfolio-page">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-color" class="nav-link" href="mailto:mpia.gaelle@hotmail.fr?">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Section Entrance-->
+    <div id="entrance-page" class="container mt-6">
+        <section class="row align-items-center">
+            <aside class="col-md-6 ">
+                <img class="avatar" src="./assets/img/Gaelle-Avatar.svg" alt="">
+            </aside>
+            <article class="col-md-6">
+                <h1 class="title-Entrance">Hi there,<br>
+                    I'm Gaëlle a junior Front-end Developer & Graphic Designer<br>
+                    Working in Brussels</h1>
+            </article>
+        </section>
+    </div>
+    <!-- Section Skills-->
+    <div id="skills-page" class="container mt-6">
+        <section class="row custom-line">
+            <aside id="skills" class="col-md-6">
+              <img id="skills-ban" src="./assets/img/skills.svg" alt="">                                
+            </aside>
+            <article id="skills-box" class="col-md-3">
+                <img id="icone-skills" class="img-responsive center-block" src="./assets/img/web.svg" alt="icone-web">
+                <h1 class="">WEB</h1>
+                <ul class="list-group align-items-center">
+                    <li class="list-group-item">HTML/CSS</li>
+                    <li class="list-group-item">Javascript</li>
+                    <li class="list-group-item">Node.js</li>
+                    <li class="list-group-item">React</li>
+                    <li class="list-group-item">JQuery</li>
+                    <li class="list-group-item">PHP-MySQL</li>
+                    <li class="list-group-item">WordPress</li>
+                </ul>
+            </article>
+            <article id="skills-box" class="col-md-3">
+                <img id="icone-skills" src="./assets/img/design.svg" alt="icone-design">
+                <h1 class="">DESIGN</h1>
+                <ul class="list-group align-items-center">
+                    <li class="list-group-item">Suite Adobe:</li>
+                    <li class="list-group-item">Animate</li>
+                    <li class="list-group-item">Indesign</li>
+                    <li class="list-group-item">Illustrator</li>
+                    <li class="list-group-item">Photoshop</li>
+                    <li class="list-group-item">XD</li>
+                    <li class="list-group-item">UX-UI design</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+    <!-- Section porfolio-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <img id="work-icone" src="./assets/img/work.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="porfolio-page" class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="hover-effect">
+                    <a href="wib.html">
+                    <img class="img-responsive" src="./assets/img/affiche-wib.png" alt="">
+                    <div class="overlay">
+                        <h2 class="text">walk in brussels</h2>
+                    </div>
+                    </a>
+                </div>               
+            </div>
+            <div class="col-md-4">
+                <div class="hover-effect">
+                    <a href="alibi.html">
+                    <img class="img-responsive" src="./assets/img/affiche-alibi.png" alt="">
+                    <div class="overlay">
+                        <h2 class="text">Alibi</h2>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="hover-effect">
+                    <a href="milligton.html">
+                    <img class="img-responsive" src="./assets/img/affiche-milligton.png" alt="">
+                    <div class="overlay">
+                        <h2 class="text">Millington Associates</h2>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button-work">
+            <a href="porfolio.html"><button id="button-work" type="button" class="btn btn-link">see more</button></a>
+        </div>
+    </div>
+   
+    
+    <!-- Section contact-->
+    <div class="container mt-5 mb-5">
+        <section class="row">
+            <article class="col-md-12 mb-5">
+                <img id="keep-icone" src="./assets/img/keep.svg" alt="">
+            </article>
+            <article id="keep-contenu" class="col-md-12">
+                <h1 class="keep-title">If you have any opportunities or propositions, drop me a line !</h1>
+            </article>
+            <article id="keep-contenu" class="col-md-12 mt-5 align-items-center ">
+                <img class="icone-download" src="./assets/img/download.svg" alt="">
+                <a id="footer-txt" href="./assets/img/GaelleMpia-cv.pdf" download="CV">My resume</a>
+            </article>
+        </section>
+    </div>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="footer-basic align-items-center">
+                <footer>
+                    <div class="social">
+                    <p class="copyright">Made with love by M'pia Elengesa Ikuna Gaëlle © 2023</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="social-icons">
+        <div class="text-right">
+            <ul class="social-icons">
+                <li><a href="https://github.com/Mpiagaelle" title="GitHub"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gaelle-mpia/" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" title="béhance"><i class="fa fa-behance"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Isotope-->
+    <script src="./assets/scripts/isotope-layout/isotope.pkgd.min.js"></script>
+    <!--Aos-->
+    <script src="./assets/scripts/aos.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Nav-->
+    <script src="./assets/scripts/nav.js"></script>
+    <!-- Theme JS-->
+    <script src="./assets/scripts/scripts.js"></script>
+</body>
+</html>

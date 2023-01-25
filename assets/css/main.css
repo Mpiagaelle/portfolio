@@ -1,0 +1,329 @@
+:root {
+    --darkGrey:#414040;
+    --yellow: #E6E357;
+    --whiteLight:rgba(255, 255, 255, 0.337);
+    --white:rgb(255, 255, 255);
+    --grey:#41464b;
+    --sunshineYello: #febe13;
+}
+/*--------------------------------------------------------------
+# entrance
+--------------------------------------------------------------*/
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-color:hover {
+    color: var(--sunshineYello);
+
+}
+
+.title-Entrance {
+    font-family: "Quicksand-Bold";
+    line-height: 1.5;
+    display: inline;
+
+    background-image: linear-gradient(transparent 50%,
+            #fdfdfd9d 50%,
+            #E6E357 85%,
+            transparent 85%,
+            transparent 100%);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+    }
+    
+    @keyframes animatedBackground {
+        to {
+            background-size: 100% 100%;
+        }
+    }
+
+#logo {
+    width: 5vw;
+    margin-left: 1.5em;
+}
+
+#social-icons {
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 199;
+}
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: block;
+    margin: 1px 0px;
+}
+
+.social-icons li a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--darkGrey);
+    font-size: 18px;
+}
+
+.social-icons li a:hover {
+    color: var(--sunshineYello);
+    background-color: #fff;
+}
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+#icone-skills {
+    width: 15vw;
+}
+
+#skills-ban{
+    width: 25vw;
+}
+
+#skills-box {
+        text-align: center;
+}
+
+
+.title-skills {
+    font-size: 2.5em;
+}
+
+.list-group-item:hover {
+    margin-bottom: 0.5em;
+    text-decoration: underline;
+    color: var(--sunshineYello);
+}
+/*--------------------------------------------------------------
+# Porfolio
+--------------------------------------------------------------*/
+#work-icone {
+    width: 25vw;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.text {
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Quicksand-bold";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hover-effect {
+
+    position: relative;
+    width: 100%;
+        
+}
+
+.hover-effect:hover .overlay {
+    opacity: 1;
+}
+
+.button-work {
+    display: flex;
+    justify-content: center;
+}
+
+#button-work {
+    background-color: var(--grey);
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand-medium';
+    border-radius: 2em;
+}
+
+#button-work:hover {
+    background-color: var(--sunshineYello);
+}
+
+
+/*--------------------------------------------------------------
+# Keep in touch
+--------------------------------------------------------------*/
+.icone-download {
+    width: 5vw;
+}
+
+#keep-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#round {
+    width: 20vw;
+}
+
+#keep-icone {
+    width: 30vw;
+}
+
+.keep-title {
+    font-size: 2em;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer-basic {
+    padding: 1em 0;
+    color: var(--darkGrey);
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 0.5em;;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+#footer-txt {
+    text-decoration: none;
+    color:var(--grey)
+}
+
+#footer-txt:hover {
+    color: var(--sunshineYello);
+}
+
+@media only screen and (max-width: 1199px) {
+    .social-icons li a {
+        width: 25px;
+        height: 30px;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+    }
+}
+
