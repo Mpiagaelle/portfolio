@@ -139,6 +139,12 @@
     width: 25vw;
 }
 
+@media only screen and (max-width: 1199px) {
+    #skills-ban {   
+        min-width: 9em;       
+    }
+}
+
 #skills-box {
     text-align: center;
     display: flex;
@@ -162,6 +168,12 @@
 --------------------------------------------------------------*/
 #work-icone {
     width: 25vw;
+}
+
+@media only screen and (max-width: 1199px) {
+    #work-icone {   
+        min-width: 9em;       
+    }
 }
 
 .img-responsive {
@@ -233,6 +245,12 @@
     width: 5vw;
 }
 
+@media only screen and (max-width: 1199px) {
+    .icone-download {   
+        min-width: 3em;     
+    }
+}
+
 #keep-contenu {
     display: flex;
     flex-direction: column;
@@ -245,6 +263,12 @@
 
 #keep-icone {
     width: 30vw;
+}
+
+@media only screen and (max-width: 1199px) {
+    #keep-icone {   
+        min-width: 15em;      
+    }
 }
 
 .keep-title {
