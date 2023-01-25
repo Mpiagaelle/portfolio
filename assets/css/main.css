@@ -35,10 +35,11 @@
         transform: translateX(0);
     }
 }
-@media (min-width: 576px) {
-    #logo {
-        width: 10vw;
-        margin-left: 1.5em;
+
+@media only screen and (max-width: 1199px) {
+    #logo {   
+        display: inline-block;
+        min-width: 2.5em;       
     }
 }
  
