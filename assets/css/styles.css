@@ -4094,6 +4094,7 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
   align-items: flex-end;
+  font-size: 0.8em;
 }
 
 .navbar-nav .nav-link {
